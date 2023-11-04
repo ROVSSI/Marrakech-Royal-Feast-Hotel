@@ -1,3 +1,4 @@
+// hide nav bar
 document.addEventListener("DOMContentLoaded", function(){
 
     el_autohide = document.querySelector('.autohide');
@@ -19,12 +20,14 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   }); 
 
+// preloader
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function(){
   loader.style.display = "none";
 }
 )
 
+// go to the top arrow
 const toTop = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {
@@ -33,9 +36,16 @@ window.addEventListener("scroll", () => {
   } else {
     toTop.classList.remove("active");
   }
+}
+)
+
+// go to discover arrow
+const todown = document.querySelector(".to-down");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    todown.classList.add("active");
+  } else {
+    todown.classList.remove("active");
+  }
 })
-
-
-
-
-

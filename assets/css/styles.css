@@ -1,16 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
-
+/* smooth scrolling */
 html{
   scroll-behavior: smooth;
 }
+
+/* font  */
 .redressed {
 	font-family: "buda",Georgia,serif;
 }
 
-.merriweather {
-	font-family: "buda",Georgia,serif;
+/* preloader css */
+#preloader{
+  background: #F2DAD7 url(../img/logo/loader.gif)  no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
 
+/* nav bar css */
 .cc-navbar {
 	background-color: rgba(0, 0, 0, 0.55);
 	font-family: "buda",Georgia,serif;
@@ -28,41 +36,12 @@ html{
 	border-bottom-color: var(--bs-teal);
 }
 
-.banner,
-.order-form {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/restaurant/restaurant4.jpeg') center center fixed no-repeat;
-	background-size: cover;
-	height: 800px;
+.navimg{
+  height: 65px;
+  width: auto;
+  padding-left: 55px ;
 }
 
-.order-form {
-	height: 500px;
-}
-
-.banner .banner-desc h1 {
-	font-size: 48px;
-	font-weight: 400;
-	color: #fff;
-}
-
-.cc-menu {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Carousel/carousel4.jpg') center center fixed no-repeat;
-	background-size: cover;
-	height: 1200px;
-}
-
-.btn-order {
-	color: var(--bs-teal);
-	border-color: var(--bs-teal);
-	transition: 0.5s;
-}
-
-.btn-order:hover,
-.btn-order:focus,
-.btn-order:active {
-	color: #fff;
-	background-color: var(--bs-teal);
-}
 /* hide nav */
 .scrolled-down{
 	transform:translateY(-100%); transition: all 0.3s ease-in-out;
@@ -71,184 +50,68 @@ html{
 	transform:translateY(0); transition: all 0.3s ease-in-out;
 }
 
-/* gallery */
-
-.gallery {
-	--s: 250px; /* control the size */
-	--g: 20px;  /* control the gap */
-	--f: 1.5;   /* control the scale factor */
-	
-	display: grid;
-	gap: var(--g);
-	width: 1100px;
-	height: 800px;
-	aspect-ratio: 1;
-	grid-template-columns: repeat(2,auto);
-  }
-  
-  .gallery > img {
-	display: flex;
-    align-items: center;
-    justify-content: center;
-	border-radius: 2.5%;
-	width: 100px;
-	height: 50px;
-	min-height: 100%;
-	min-width: 100%;
-	object-fit:cover;
-	cursor: pointer;
-	transition: .35s linear;
-  }
-  
-  .gallery img:hover{
-	filter: grayscale(0);
-	width:  calc(var(--s)*var(--f));
-	height: calc(var(--s)*var(--f));
-  }
-
-  /* gallery 2 */
-  @import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
-
-
-
-body {
-  font-family: "buda",Georgia,serif;
-  margin: 0;
-}
-
-button {
-  cursor: pointer;
-}
-
-#portfolio {
+/* header css */
+.tophead{
+  display: flex;
+  align-items: center;
+  padding: 250px;
+  height: 100vh;
   width: 100%;
-  min-height: 100vh;
-  background: #ffffff;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 2px;
-}
-.project {
-  position: relative;
-  background: #F2DAD7;
-  overflow: hidden;
-  img {
-    position: absolute;
-    opacity: 0.9;
-  }
-  p {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    padding: 1em 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    z-index: 3;
-  }
-  .grid__title {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    white-space: nowrap;
-    bottom: 0;
-    font-weight: 100;
-    font-size: 0.8em;
-    z-index: 3;
-    text-transform: uppercase;
-    color: #474545;
-    letter-spacing: 2px;
-  }
 }
 
-/*project hover overlay */
-.project:hover .grid__overlay {
-  transform: translateY(0%);
+.banner,
+.order-form {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/restaurant/restaurant4.jpeg') center center fixed no-repeat;
+	background-size: cover;
+	height: 800px;
 }
 
-.grid__overlay {
-  background: rgba(darken(#F2DAD7, 10%), .9);
-  height: 100%;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  position: relative;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  transform: translateY(101%);
-  transition: all 0.3s ease-in-out;
-  button {
-    background: none;
-    outline: none;
-    font-weight: 100;
-    letter-spacing: 2px;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    text-transform: uppercase;
-    padding: 10px;
-    &:hover {
-      transition: all 0.3s ease-in-out;
-      background: #ffffff;
-      color: #D1A39E;
-      transform: scale(1.05);
-    }
-  }
+.banner .banner-desc h1 {
+  font-size: 48px;
+	font-weight: 400;
+	color: #fff;
 }
 
-/*project popup overlay */
+.logo{
+  display: flex;
+  height: 35%;
+  width: 50%;
+  max-width: 100%;
+}
 
-.overlay {
+.to-down {
+  background: transparent;
   position: fixed;
-  background: rgba(#474545, 0.7);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
-  z-index: 3;
-}
-.overlay.open {
-  display: grid;
+  padding-bottom: 100px;
+  bottom: 5px;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+  font-size:50px;
+  color:#1f1f1f;
+  text-decoration: none;
+  transition: all .4s;
+}
+#toDown{
+  color: white;
 }
 
-.overlay__inner {
-  background: #ffffff;
-  width: 700px;
-  padding: 20px;
-  position: relative;
-  opacity: 1;
+#toDown:hover{
+  color: #ba6a6a;
+  font-size: 75px;
+  transition: .25s linear;
 }
 
-.close {
-  position: absolute;
-  top: 3px;
-  right: 10px;
-  background: none;
-  outline: 0;
-  color: #474545;
-  border: 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  &:hover {
-    color: #D1A39E;
-  }
+.to-down.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:0;
 }
 
-.project__image {
-  margin-left: -50%;
-}
-  
-
-
-.menu_btn> .cc-navbar{
-  background-color: transparent;
-  box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.54);
-	z-index: 99;
-}
-
+/* discover css */
 
 .Discover_title{
   display: flex;
@@ -265,35 +128,8 @@ button {
 .Discover_btn:hover {
   background-color: #800000;
   color: white;
-}
-
-.container_size{
-  height: 850px;
-}
-
-
-#preloader{
-  background: #F2DAD7 url(../img/logo/loader.gif)  no-repeat center center;
-  background-size: 10%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
-
-.logo{
-  display: flex;
-  height: 35%;
-  width: 50%;
-  max-width: 100%;
-}
-
-.tophead{
-  display: flex;
-  align-items: center;
-  padding: 250px;
-  height: 100vh;
-  width: 100%;
+  font-size: 22px;
+  transition: .25s linear;
 }
 
 .Discover_section{
@@ -301,13 +137,65 @@ button {
   height: 100vh;
   width: 100%;
 }
-
-.section_color{
-  background-color: #E2E0DA; 
+.container_size{
+  height: 850px;
 }
 
-.ours_title{
-  color: #800000;
+/* menu css */
+.cc-menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Carousel/carousel4.jpg') center center fixed no-repeat;
+	background-size: cover;
+	height: 1200px;
+}
+
+.menu_btn> .cc-navbar{
+  background-color: transparent;
+  box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.54);
+	z-index: 99;
+}
+
+/* gallery */
+.gallery {
+  --s: 250px; /* control the size */
+  --g: 20px;  /* control the gap */
+  --f: 1.5;   /* control the scale factor */
+	
+  display: grid;
+  gap: var(--g);
+  width: 1100px;
+  height: 800px;
+  grid-template-columns: repeat(2,auto);
+}
+  
+.gallery > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	border-radius: 2.5%;
+	width: 100px;
+	height: 50px;
+	min-height: 100%;
+	min-width: 100%;
+	object-fit:cover;
+	cursor: pointer;
+	transition: .35s linear;
+  }
+  
+  .gallery img:hover{
+	filter: grayscale(0);
+	width:  calc(var(--s)*var(--f));
+	height: calc(var(--s)*var(--f));
+  }
+
+
+/* order css */
+.order-form {
+  height: 500px;
+}
+
+/* footer */
+.footer{
+  background-color: #E2E0DA; 
 }
 
 .footerimg{
@@ -315,6 +203,7 @@ button {
   width: 100%;
 }
 
+/* go to the top arrow */
 .to-top {
   background: #ba6a6a;
   position: fixed;
@@ -338,4 +227,15 @@ button {
   bottom:32px;
   pointer-events: auto;
   opacity:1;
+}
+
+/* general css */
+.section_color{
+  background-color: #E2E0DA; 
+  height: 100vh;
+  width: 100%;
+}
+
+.ours_title{
+  color: #800000;
 }
