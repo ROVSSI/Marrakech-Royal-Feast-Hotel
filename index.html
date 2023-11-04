@@ -17,11 +17,14 @@
 		<title>Projet formation</title>
 	</head>
 	<body>
-		
+		<!-- preloader -->
 		<div id="preloader"></div>
+		<!--  -->
+
+		<!-- nav bar -->
 		<nav class="autohide cc-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100" >
 			<div class="container-fluid ">
-				<a class="navbar-brand text-uppercase mx-4 py-3 fw-bolder"  href="#">Marrakech Royal Feast</a>
+				<img class="navimg" src="./assets/img/logo/logo1.PNG" alt="logo">
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -55,28 +58,28 @@
 			</div>
 		</nav>
 
-		
+		<!-- header section -->
 		</section>
-		<div class="banner flex-column tophead">
+		<div class="banner flex-column tophead" style="height: 100vh;">
 			
 			<img class="logo" src="assets/img/logo/logo1.png" alt="logo">
 			<h1 class="text-capitalize py-5 text-light redressed fs-1 fw-bold text-center " >
 				Discover Morocco's Riches, Celebrate Marrakech's Heritage
 			</h1>
 			<a type="button" class="btn btn-lg btn-light Discover_btn"  href="#order">ORDER NOW</a>
-		
-			
+			<a href="#Discover" class="to-down">
+				<i class="fas fa-chevron-down" id="toDown"></i>
+			</a>
 		</div>
-		
+		<!--  -->
 
-		<section class="available merriweather py-5 Discover_section" >
+		<!-- Discover section -->
+		<section class="available redressed py-5 Discover_section" >
 			<div class="container container_size">
 				<h1 class="card-title Discover_title text-uppercase " id="Discover">Discover Moroccan Delights</h1>
-
 				<div class="row" >
 					<div class="card my-5 border-0 rounded-0" style="background-color: #E2E0DA;" >
 						<div class="row">
-
 							<div class="col-md-6" >
 								<div class="card-body px-0">
 									<br><br><p class="card-text text-break fs-4">
@@ -99,13 +102,9 @@
 										Join us for a culinary adventure and savor the authentic tastes of Morocco.
 									</p>
 									<a type="button" class="btn btn-lg btn-outline-secondary Discover_btn" href="#">Join us</a>
-									</div>
+								</div>
 							</div>
-							
-
 							<div class="col-md-1"></div>
-
-
 							<div class="col-md-5">
 								<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 									<div class="carousel-inner">
@@ -143,26 +142,26 @@
 						</div>
 					</div>
 				</div>
-				
 			</div>
 		</section>
+		<!--  -->
 
-
-		<section class="cc-menu merriweather py-5" id="menu">
+		<!-- Menu -->
+		<section class="cc-menu redressed py-5" id="menu">
 			<div class="container">
 				<div class="row">
-					<h1 class="text-center text-light merriweather menu_section" >MENU</h1>
+					<h1 class="text-center text-light redressed menu_section" >MENU</h1>
 					<div class="card bg-transparent text-center mb-4 menu_btn">
 						<div class="card-header redressed fs-4 cc-navbar" >
 							<div class="nav nav-tabs justify-content-center card-header-tabs">
 								
-									<input type="button" id="myButton" value="Petit Déjeuné" class="nav-link text-light btn-lg fs-2 rounded-pill border-bottom border-3" onclick=" $('#carouselNoTouching').carousel(0);"/>
+									<input type="button" id="myButton" value="Breakfast" class="nav-link text-light btn-lg fs-2 rounded-pill border-bottom border-3" onclick=" $('#carouselNoTouching').carousel(0);"/>
 								
 									<input type="button" id="myButton" value="Desert" class="nav-link text-light btn-lg fs-2 rounded-pill border-bottom border-3" onclick=" $('#carouselNoTouching').carousel(1);"/>
 								
-									<input type="button" id="myButton" value="Déjeuné" class="nav-link text-light btn-lg fs-2 rounded-pill border-bottom border-3"  onclick=" $('#carouselNoTouching').carousel(2);"/>
+									<input type="button" id="myButton" value="Lunch" class="nav-link text-light btn-lg fs-2 rounded-pill border-bottom border-3"  onclick=" $('#carouselNoTouching').carousel(2);"/>
 								
-									<input type="button" id="myButton" value="dinner" class="nav-link text-light btn-lg fs-2 rounded-pill border-bottom border-3" onclick=" $('#carouselNoTouching').carousel(3);"/>
+									<input type="button" id="myButton" value="Dinner" class="nav-link text-light btn-lg fs-2 rounded-pill border-bottom border-3" onclick=" $('#carouselNoTouching').carousel(3);"/>
 							</div>
 						</div>
 						<div class="card-body text-light">
@@ -170,49 +169,50 @@
 						</div>
 					</div>
 				</div>
-					<!-- carousel -->
-							<div id="carouselNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-								<div class="carousel-inner">
-								  <div class="carousel-item active">
-									<div class="container gallery" >
-										<img src="./assets/img/menu/breakfast/bf1.jpeg" alt="a forest after an apocalypse">
-										<img src="./assets/img/menu/breakfast/bf2.jpeg" alt="a waterfall and many rocks">
-										<img src="./assets/img/menu/breakfast/bf3.jpeg" alt="a house on a mountain">
-										<img src="./assets/img/menu/breakfast/bf4.jpeg" alt="sime pink flowers">
-									</div>
-								  </div>
-								  <div class="carousel-item">
-									<div class="container gallery" >
-										<img src="./assets/img/menu/desert/d1.jpeg" alt="a forest after an apocalypse">
-										<img src="./assets/img/menu/desert/d2.jpeg" alt="a waterfall and many rocks">
-										<img src="./assets/img/menu/desert/d3.jpeg" alt="a house on a mountain">
-										<img src="./assets/img/menu/desert/d4.jpeg" alt="sime pink flowers">
-									</div>
-								  </div>
-								  <div class="carousel-item">
-									<div class="container gallery" >
-										<img src="./assets/img/menu/lunch/l1.jpeg"alt="a forest after an apocalypse">
-										<img src="./assets/img/menu/lunch/l2.jpeg" alt="a waterfall and many rocks">
-										<img src="./assets/img/menu/lunch/l3.jpeg" alt="a house on a mountain">
-										<img src="./assets/img/menu/lunch/l4.jpeg" alt="sime pink flowers">
-									</div>
-								  </div>
-								  <div class="carousel-item">
-									<div class="container gallery" >
-										<img src="./assets/img/menu/dinner/dn1.jpeg" alt="a forest after an apocalypse">
-										<img src="./assets/img/menu/dinner/dn2.jpeg" alt="a waterfall and many rocks">
-										<img src="./assets/img/menu/dinner/dn3.jpeg" alt="a house on a mountain">
-										<img src="./assets/img/menu/dinner/dn4.jpeg" alt="sime pink flowers">
-									</div>
-								  </div>
-								</div>
-							  </div>
+				<!-- carousel -->
+				<div id="carouselNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="container gallery" >
+								<img src="./assets/img/menu/breakfast/bf1.jpeg" alt="a forest after an apocalypse">
+								<img src="./assets/img/menu/breakfast/bf2.jpeg" alt="a waterfall and many rocks">
+								<img src="./assets/img/menu/breakfast/bf3.jpeg" alt="a house on a mountain">
+								<img src="./assets/img/menu/breakfast/bf4.jpeg" alt="sime pink flowers">
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="container gallery" >
+								<img src="./assets/img/menu/desert/d1.jpeg" alt="a forest after an apocalypse">
+								<img src="./assets/img/menu/desert/d2.jpeg" alt="a waterfall and many rocks">
+								<img src="./assets/img/menu/desert/d3.jpeg" alt="a house on a mountain">
+								<img src="./assets/img/menu/desert/d4.jpeg" alt="sime pink flowers">
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="container gallery" >
+								<img src="./assets/img/menu/lunch/l1.jpeg"alt="a forest after an apocalypse">
+								<img src="./assets/img/menu/lunch/l2.jpeg" alt="a waterfall and many rocks">
+								<img src="./assets/img/menu/lunch/l3.jpeg" alt="a house on a mountain">
+								<img src="./assets/img/menu/lunch/l4.jpeg" alt="sime pink flowers">
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="container gallery" >
+								<img src="./assets/img/menu/dinner/dn1.jpeg" alt="a forest after an apocalypse">
+								<img src="./assets/img/menu/dinner/dn2.jpeg" alt="a waterfall and many rocks">
+								<img src="./assets/img/menu/dinner/dn3.jpeg" alt="a house on a mountain">
+								<img src="./assets/img/menu/dinner/dn4.jpeg" alt="sime pink flowers">
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-
-
 		</section>
-		<section class="cc-carousel merriweather  text-dark text-center py-5 ours_section" id="our_restaurant">
-			<div class="container ours_section" >
+		<!--  -->
+
+		<!-- Our restaurant section-->
+		<section class="cc-carousel redressed  text-dark text-center py-5 section_color" id="our_restaurant">
+			<div class="container osection_color" >
 				<div class="row">
 					<h1 class="text-uppercase ours_title " >Our Restaurant</h1>
 					<div class="col pb-4">
@@ -246,14 +246,15 @@
 				</div>
 			</div>
 		</section>
+		<!--  -->
 
-
-		<section class="order-form py-5" id="order">
+		<!-- ORDER section -->
+		<section class="order-form py-5" id="order" >
 			<div class="container">
-				<h2 class="merriweather text-center text-light mb-4" >ORDER</h2>
+				<h2 class="redressed text-center text-light mb-4" >ORDER</h2>
 				<form>
-					<div class="row">
-						<div class="col-md-6 col-sm">
+					<div class="row" >
+						<div class="col-md-6 col-sm" >
 							<div class="input-group mb-3">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 								<input type="text" class="form-control" placeholder="Your full name" />
@@ -295,7 +296,7 @@
 					</div>
 					<div class="row">
 						<div class="input-group mb-3">
-							<span class="input-group-text">"Specify the number</span>
+							<span class="input-group-text">Specify the number</span>
 							<input type="text" class="form-control" placeholder="Ex:. 15" />
 						</div>
 						<div class="input-group">
@@ -306,9 +307,11 @@
 				</form>
 			</div>
 		</section>
+		<!--  -->
 
-		<section class="cc-footer py-5 section_color">
-			<div class="container section_color">
+		<!-- Foter section -->
+		<section class="cc-footer py-5 footer">
+			<div class="container footer">
 				<div class="row">
 					<div class="col-lg-3 col-md-6 mb-4 py-5 px-5">
 						<img class="footerimg" src="./assets/img/logo/logo.PNG" alt="logo">
@@ -316,30 +319,30 @@
 					<div class="col-lg-3 col-md-6 mb-4 col-sm">
 						<h6 class="redressed ps-3 fs-5 ours_title">Le Restaurant</h6>
 						<nav class="nav flex-column">
-							<a class="nav-link py-1 merriweather fs-6 text-secondary active" aria-current="page" href="#">Home</a>
-							<a class="nav-link py-1 merriweather fs-6 text-secondary" href="#">Since 1953</a>
-							<a class="nav-link py-1 merriweather fs-6 text-secondary" href="#">Shops</a>
-							<a class="nav-link py-1 merriweather fs-6 text-secondary" href="#" >Magazine</a
+							<a class="nav-link py-1 redressed fs-6 text-secondary active" aria-current="page" href="#">Home</a>
+							<a class="nav-link py-1 redressed fs-6 text-secondary" href="#">Since 1953</a>
+							<a class="nav-link py-1 redressed fs-6 text-secondary" href="#">Shops</a>
+							<a class="nav-link py-1 redressed fs-6 text-secondary" href="#" >Magazine</a
 							>
 						</nav>
 					</div>
 					<div class="col-lg-3 col-md-6 mb-4 col-sm">
 						<h6 class="redressed ps-3 fs-5 ours_title">Contact</h6>
 						<nav class="nav flex-column">
-							<a class="nav-link py-1 merriweather fs-6 text-secondary active" aria-current="page" href="#">Q&A</a>
-							<a class="nav-link py-1 merriweather fs-6 text-secondary" href="#">Photo Library</a>
-							<a class="nav-link py-1 merriweather fs-6 text-secondary" href="#">Press</a>
-							<a class="nav-link py-1 merriweather fs-6 text-secondary" href="#" >E-brochure</a
+							<a class="nav-link py-1 redressed fs-6 text-secondary active" aria-current="page" href="#">Q&A</a>
+							<a class="nav-link py-1 redressed fs-6 text-secondary" href="#">Photo Library</a>
+							<a class="nav-link py-1 redressed fs-6 text-secondary" href="#">Press</a>
+							<a class="nav-link py-1 redressed fs-6 text-secondary" href="#" >E-brochure</a
 							>
 						</nav>
 					</div>
 					<div class="col-lg-3 col-md-6 mb-4 col-sm">
 						<h6 class="redressed ps-3 fs-5 ours_title">Liens utiles</h6>
 						<nav class="nav flex-column">
-							<a class="nav-link py-1 merriweather fs-6 text-secondary active" aria-current="page" href="#">Leaders Club</a>
-							<a class="nav-link py-1 merriweather fs-6 text-secondary" href="#">Careers</a>
-							<a class="nav-link py-1 merriweather fs-6 text-secondary" href="#">Sitemap</a>
-							<a class="nav-link py-1 merriweather fs-6 text-secondary" href="#" >Legal notice</a
+							<a class="nav-link py-1 redressed fs-6 text-secondary active" aria-current="page" href="#">Leaders Club</a>
+							<a class="nav-link py-1 redressed fs-6 text-secondary" href="#">Careers</a>
+							<a class="nav-link py-1 redressed fs-6 text-secondary" href="#">Sitemap</a>
+							<a class="nav-link py-1 redressed fs-6 text-secondary" href="#" >Legal notice</a
 							>
 						</nav>
 					</div>
@@ -354,12 +357,17 @@
 				</div>
 			</div>
 		</section>
+		<!--  -->
 
+		<!-- Go to the top arrow -->
 		<a href="#" class="to-top">
 			<i class="fas fa-chevron-up" style="color: white;"></i>
 		</a>
+		<!--  -->
 
+		<!-- js files -->
 		<script src="assets/js/bootstrap.bundle.min.js"></script>
 		<script src="assets/js/index.js"></script>
+		<!--  -->
 	</body>
 </html>
